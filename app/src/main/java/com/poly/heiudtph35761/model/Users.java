@@ -1,7 +1,7 @@
 package com.poly.heiudtph35761.model;
 
 public class Users {
-    private String _id,username,password,email,phone,available;
+    private String _id,username,password,email,phone,avatar,available;
     private String createAt,updateAt;
 
 
@@ -13,12 +13,13 @@ public class Users {
         this.password = password;
     }
 
-    public Users(String _id, String username, String password, String email, String phone, String available, String createAt, String updateAt) {
+    public Users(String _id, String username, String password, String email, String phone, String avatar, String available, String createAt, String updateAt) {
         this._id = _id;
         this.username = username;
         this.password = password;
         this.email = email;
         this.phone = phone;
+        this.avatar = avatar;
         this.available = available;
         this.createAt = createAt;
         this.updateAt = updateAt;
@@ -63,6 +64,15 @@ public class Users {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
     public String getAvailable() {
         return available;
     }
