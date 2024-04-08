@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dangNhap"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/dangnhap1"
+        android:scaleType="center"
+        app:shapeAppearanceOverlay="@style/Leaf"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Chào mừng bạn"
+        android:textSize="32sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Đăng nhập tài khoản"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="39dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeColor="#000"
+            app:cursorColor="#000"
+            app:hintTextColor="#000"
+            app:helperTextTextColor="#FF0000"
+            app:errorEnabled="true"
+            app:boxStrokeErrorColor="#FF0000"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_lg_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập email hoặc số điện thoại"
+                android:fontFamily="@font/poppins"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeColor="#000"
+            app:cursorColor="#000"
+            app:hintTextColor="#000"
+            app:helperTextTextColor="#FF0000"
+            app:errorEnabled="true"
+            app:boxStrokeErrorColor="#FF0000"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_lg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <CheckBox
+                android:id="@+id/chkRememberPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhớ tài khoản"
+                android:fontFamily="@font/poppins"
+                />
+
+            <TextView
+                android:id="@+id/tv_lg_changePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot password ?"
+                android:textColor="#40A64C"
+                android:layout_marginLeft="90dp"
+                android:fontFamily="@font/poppins"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_dangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Đăng nhập"
+            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/custom_bg_btn_login"
+            app:backgroundTint="@null"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@drawable/item_bg_line_green"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hoặc"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@drawable/item_bg_line_green"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn không có tài khoản"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:id="@+id/tv_lg_dangKyTaiKhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo tài khoản"
+                android:fontFamily="@font/poppins"
+                android:textColor="#40A64C"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

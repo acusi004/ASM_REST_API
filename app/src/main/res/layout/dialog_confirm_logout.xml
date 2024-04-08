@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:background="#F8FBFF"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận đăng xuất khỏi tài khoản này"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thao tác này sẽ không thể khôi phục"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textColor="#7F7F7F"
+            android:textSize="13sp"/>
+        <Button
+            android:id="@+id/btn_co"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Đồng ý"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/custom_btn_san_pham"
+            app:backgroundTint="@null"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/btn_khong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hủy bỏ"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
